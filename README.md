@@ -1,3 +1,30 @@
+# Fair Share Coupon Distribution System
+
+A web application that distributes coupons to users in a round-robin fashion while preventing abuse through browser fingerprinting and cooldown periods.
+
+## Overview
+
+This system provides a fair approach to coupon distribution by:
+- Sequentially distributing coupons (round-robin)
+- Preventing abuse with browser fingerprinting
+- Implementing cooldown periods between claims
+- Providing a clean, responsive user interface
+- Requiring no account creation
+
+## Features
+
+- **Fair Distribution**: Users receive the next coupon in sequence
+- **Guest Access**: No registration required to claim coupons
+- **Abuse Prevention**: Multiple layers of protection against multiple claims
+- **Responsive Design**: Works on all device sizes
+- **Clear Feedback**: Immediate status updates and cooldown information
+
+## Setup Instructions
+
+1. **Clone the Repository**
+
+
+
 Follow these steps:
 
 ```sh
@@ -14,13 +41,9 @@ npm i
 npm run dev
 ```
 
-## What technologies are used for this project?
+## Technical Implementation
 
-This project is built with .
-
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
-
+- **Frontend**: React.js with Tailwind CSS
+- **State Management**: React state and context
+- **Storage**: Browser cookies and localStorage
+- **Security**: Client-side fingerprinting and verification
